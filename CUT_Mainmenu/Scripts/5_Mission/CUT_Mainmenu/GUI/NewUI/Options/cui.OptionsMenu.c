@@ -54,6 +54,7 @@ modded class OptionsMenu extends UIScriptedMenu
 		{
 			m_Tabber.m_OnTabSwitch.Insert(OnTabSwitch);
 			m_Tabber.m_OnAttemptTabSwitch.Insert(OnAttemptTabSwitch);
+			m_Tabber.AlignTabbers();
 		}
 
 		m_ModalLock = false;

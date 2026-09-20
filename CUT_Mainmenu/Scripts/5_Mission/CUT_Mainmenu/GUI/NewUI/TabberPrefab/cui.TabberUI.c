@@ -96,6 +96,12 @@ modded class TabberUI extends ScriptedWidgetEventHandler
 		if (!m_TabControlsRoot)
 			return;
 
+		if (CUT_IsOptionsTabber())
+		{
+			CUT_AlignOptionsCategoryBar();
+			return;
+		}
+
 		float total_size;
 		float x, y;
 
@@ -156,5 +162,88 @@ modded class TabberUI extends ScriptedWidgetEventHandler
 		if (tab_controls_scroller)
 			tab_controls_scroller.Update();
 		m_TabControlsRoot.Update();
+	}
+
+	protected bool CUT_IsOptionsTabber()
+	{
+		if (!m_Root)
+			return false;
+
+		Widget parent = m_Root.GetParent();
+		if (!parent)
+			return false;
+
+		return parent.FindAnyWidget("SettingsTextWidget") != null;
+	}
+
+	protected void CUT_AlignOptionsCategoryBar()
+	{
+		Widget tab_controls_container = m_TabControlsRoot.FindAnyWidget("Tab_Control_Container");
+		if (!tab_controls_container)
+			return;
+
+		m_TabControlsRoot.Update();
+		tab_controls_container.Update();
+
+		float min_w = 148;
+		float max_w = 220;
+		float text_pad = 56;
+		float gap = 4;
+		float total_size = 0;
+		int visible = 0;
+
+		Widget tab_child = tab_controls_container.GetChildren();
+		while (tab_child)
+		{
+			if (tab_child.IsVisible())
+			{
+				TextWidget tab_text = TextWidget.Cast(tab_child.FindAnyWidget(tab_child.GetName() + "_Title"));
+				float width = min_w;
+				if (tab_text)
+				{
+					int t_x;
+					int t_y;
+					tab_text.Update();
+					tab_text.GetTextSize(t_x, t_y);
+					width = t_x + text_pad;
+				}
+				if (width < min_w)
+					width = min_w;
+				if (width > max_w)
+					width = max_w;
+
+				tab_child.SetFlags(WidgetFlags.HEXACTSIZE);
+				tab_child.SetSize(width, 1);
+
+				Widget tab_bg = tab_child.FindAnyWidget(tab_child.GetName() + "_Background");
+				if (tab_bg)
+				{
+					tab_bg.ClearFlags(WidgetFlags.HEXACTSIZE);
+					tab_bg.SetPos(0, 0);
+					tab_bg.SetSize(1, 1);
+				}
+
+				total_size += width;
+				visible++;
+			}
+			tab_child = tab_child.GetSibling();
+		}
+
+		if (visible > 1)
+			total_size += gap * (visible - 1);
+
+		if (total_size > 0)
+		{
+			tab_controls_container.SetFlags(WidgetFlags.HEXACTSIZE);
+			tab_controls_container.SetSize(total_size, 1);
+			tab_controls_container.Update();
+
+			float x;
+			float y;
+			m_TabControlsRoot.GetSize(x, y);
+			m_TabControlsRoot.SetFlags(WidgetFlags.HEXACTSIZE);
+			m_TabControlsRoot.SetSize(total_size, y);
+			m_TabControlsRoot.Update();
+		}
 	}
 }

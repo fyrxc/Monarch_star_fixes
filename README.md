@@ -10,6 +10,10 @@ CUT also used a **90px Back button** in a **400px** action column, so Apply / Un
 
 Those parent containers now hug their content. Widget names, IDs, and settings are unchanged. Scrollbars still apply when a tab is taller than the 800px panel.
 
+## Options category bar
+
+The GAME / AUDIO / VIDEO / CONTROLS / HITMARKER / CRASHOUT tabs sat in a **1400px GridSpacer with 10 columns**, so they were stretched evenly across the screen. That container is now a **WrapSpacer** that packs each tab to a compact width (about 150–200px) with a 4px gap. The **OPTIONS** title stays right-aligned and is unchanged.
+
 ## Label / control overlap fix
 
 After the first compact pass, **labels painted over dropdowns and sliders** (Game tab, VPPAdminTools camera rows, etc.). Group WrapSpacers still had **Size To Content H**, so rows shrank to the option widget instead of staying **650px** wide. A 50/50 split of that narrow row made long captions collide with the control.
