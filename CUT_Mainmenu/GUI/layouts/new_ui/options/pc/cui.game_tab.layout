@@ -31,7 +31,7 @@ FrameWidgetClass game_tab_root {
      "no focus" 1
      Padding 4
      Margin 0
-     "Size To Content H" 1
+     "Size To Content H" 0
      "Size To Content V" 1
      Columns 1
      Rows 2
@@ -44,11 +44,11 @@ FrameWidgetClass game_tab_root {
        hexactpos 1
        vexactpos 1
        hexactsize 0
-       vexactsize 1
+       vexactsize 0
        "no focus" 1
        Padding 0
        Margin 0
-       "Size To Content H" 1
+       "Size To Content H" 0
        "Size To Content V" 1
        {
         PanelWidgetClass general_settings_header {
@@ -56,7 +56,7 @@ FrameWidgetClass game_tab_root {
          ignorepointer 1
          color 0 0 0 1
          position 0 0
-         size 1 30
+         size 1 34
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -84,7 +84,7 @@ FrameWidgetClass game_tab_root {
         }
         GridSpacerWidgetClass general_settings_content {
          ignorepointer 1
-         color 0 0 0 0.549
+         color 0 0 0 0.75
          position 0 0
          size 1 1
          hexactpos 1
@@ -94,7 +94,7 @@ FrameWidgetClass game_tab_root {
          style DayZDefaultPanel
          Padding 0
          Margin 0
-         "Size To Content H" 1
+         "Size To Content H" 0
          "Size To Content V" 1
          Columns 1
          Rows 1
@@ -103,7 +103,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -113,23 +113,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass language_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -155,7 +156,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass language_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -181,7 +182,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -191,23 +192,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass pause_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -233,7 +235,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass pause_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -259,7 +261,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -269,23 +271,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass bleeding_indication_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -312,7 +315,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass bleeding_indication_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -338,7 +341,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -348,23 +351,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass connectivity_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -390,7 +394,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass connectivity_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -424,11 +428,11 @@ FrameWidgetClass game_tab_root {
        hexactpos 1
        vexactpos 1
        hexactsize 0
-       vexactsize 1
+       vexactsize 0
        "no focus" 1
        Padding 0
        Margin 0
-       "Size To Content H" 1
+       "Size To Content H" 0
        "Size To Content V" 1
        {
         PanelWidgetClass camera_settings_header {
@@ -436,7 +440,7 @@ FrameWidgetClass game_tab_root {
          ignorepointer 1
          color 0 0 0 1
          position 0 0
-         size 1 30
+         size 1 34
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -464,7 +468,7 @@ FrameWidgetClass game_tab_root {
         }
         GridSpacerWidgetClass camera_settings_content {
          ignorepointer 1
-         color 0 0 0 0.549
+         color 0 0 0 0.75
          position 0 0
          size 1 1
          hexactpos 1
@@ -474,7 +478,7 @@ FrameWidgetClass game_tab_root {
          style DayZDefaultPanel
          Padding 0
          Margin 0
-         "Size To Content H" 1
+         "Size To Content H" 0
          "Size To Content V" 1
          Columns 1
          Rows 1
@@ -483,7 +487,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -493,23 +497,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass fov_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -535,7 +540,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass fov_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -569,11 +574,11 @@ FrameWidgetClass game_tab_root {
        hexactpos 1
        vexactpos 1
        hexactsize 0
-       vexactsize 1
+       vexactsize 0
        "no focus" 1
        Padding 0
        Margin 0
-       "Size To Content H" 1
+       "Size To Content H" 0
        "Size To Content V" 1
        {
         PanelWidgetClass hud_settings_header {
@@ -581,7 +586,7 @@ FrameWidgetClass game_tab_root {
          ignorepointer 1
          color 0 0 0 1
          position 0 0
-         size 1 30
+         size 1 34
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -609,7 +614,7 @@ FrameWidgetClass game_tab_root {
         }
         GridSpacerWidgetClass hud_settings_content {
          ignorepointer 1
-         color 0 0 0 0.549
+         color 0 0 0 0.75
          position 0 0
          size 1 1
          hexactpos 1
@@ -620,7 +625,7 @@ FrameWidgetClass game_tab_root {
          "no focus" 1
          Padding 0
          Margin 0
-         "Size To Content H" 1
+         "Size To Content H" 0
          "Size To Content V" 1
          Columns 1
          {
@@ -628,7 +633,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -638,23 +643,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass hud_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -680,7 +686,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass hud_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -706,7 +712,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -716,23 +722,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass hud_brightness_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -758,7 +765,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass hud_brightness_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -784,7 +791,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -794,23 +801,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass crosshair_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -836,7 +844,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass crosshair_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -862,7 +870,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -872,23 +880,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass quickbar_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -914,7 +923,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass quickbar_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -940,7 +949,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -950,23 +959,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass hud_vehicle_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -992,7 +1002,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass hud_vehicle_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -1018,7 +1028,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -1028,23 +1038,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass serverinfo_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -1070,7 +1081,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass serverinfo_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -1104,11 +1115,11 @@ FrameWidgetClass game_tab_root {
        hexactpos 1
        vexactpos 1
        hexactsize 0
-       vexactsize 1
+       vexactsize 0
        "no focus" 1
        Padding 0
        Margin 0
-       "Size To Content H" 1
+       "Size To Content H" 0
        "Size To Content V" 1
        {
         PanelWidgetClass chat_settings_header {
@@ -1116,7 +1127,7 @@ FrameWidgetClass game_tab_root {
          ignorepointer 1
          color 0 0 0 1
          position 0 0
-         size 1 30
+         size 1 34
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -1144,7 +1155,7 @@ FrameWidgetClass game_tab_root {
         }
         GridSpacerWidgetClass chat_settings_content {
          ignorepointer 1
-         color 0 0 0 0.549
+         color 0 0 0 0.75
          position 0 0
          size 1 1
          hexactpos 1
@@ -1155,7 +1166,7 @@ FrameWidgetClass game_tab_root {
          "no focus" 1
          Padding 0
          Margin 0
-         "Size To Content H" 1
+         "Size To Content H" 0
          "Size To Content V" 1
          Columns 1
          {
@@ -1163,7 +1174,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -1173,23 +1184,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass game_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -1215,7 +1227,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass game_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -1241,7 +1253,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -1251,23 +1263,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass admin_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -1293,7 +1306,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass admin_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -1319,7 +1332,7 @@ FrameWidgetClass game_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -1329,23 +1342,24 @@ FrameWidgetClass game_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass player_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -1371,7 +1385,7 @@ FrameWidgetClass game_tab_root {
               FrameWidgetClass player_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0

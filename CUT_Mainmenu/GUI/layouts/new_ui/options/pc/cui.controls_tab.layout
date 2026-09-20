@@ -30,7 +30,7 @@ FrameWidgetClass controls_tab_root {
      "no focus" 1
      Padding 4
      Margin 0
-     "Size To Content H" 1
+     "Size To Content H" 0
      "Size To Content V" 1
      Columns 1
      Rows 2
@@ -38,18 +38,18 @@ FrameWidgetClass controls_tab_root {
       WrapSpacerWidgetClass keyboard_settings_root {
        visible 1
        ignorepointer 1
-       color 0 0 0 0.549
+       color 0 0 0 0.75
        position 0 0
        size 1 1
        hexactpos 1
        vexactpos 1
        hexactsize 0
-       vexactsize 1
+       vexactsize 0
        style DayZDefaultPanel
        "no focus" 1
        Padding 0
        Margin 0
-       "Size To Content H" 1
+       "Size To Content H" 0
        "Size To Content V" 1
        {
         PanelWidgetClass keyboard_settings_header {
@@ -57,7 +57,7 @@ FrameWidgetClass controls_tab_root {
          ignorepointer 1
          color 0 0 0 1
          position 0 0
-         size 1 30
+         size 1 34
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -96,7 +96,7 @@ FrameWidgetClass controls_tab_root {
          "no focus" 0
          Padding 0
          Margin 0
-         "Size To Content H" 1
+         "Size To Content H" 0
          "Size To Content V" 1
          Columns 1
          Rows 1
@@ -105,7 +105,7 @@ FrameWidgetClass controls_tab_root {
            clipchildren 0
            ignorepointer 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -129,11 +129,11 @@ FrameWidgetClass controls_tab_root {
        hexactpos 1
        vexactpos 1
        hexactsize 0
-       vexactsize 1
+       vexactsize 0
        "no focus" 1
        Padding 0
        Margin 0
-       "Size To Content H" 1
+       "Size To Content H" 0
        "Size To Content V" 1
        {
         PanelWidgetClass mouse_sensitivity_settings_header {
@@ -141,7 +141,7 @@ FrameWidgetClass controls_tab_root {
          ignorepointer 1
          color 0 0 0 1
          position 0 0
-         size 1 30
+         size 1 34
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -169,7 +169,7 @@ FrameWidgetClass controls_tab_root {
         }
         GridSpacerWidgetClass mouse_sensitivity_settings_content {
          ignorepointer 1
-         color 0 0 0 0.549
+         color 0 0 0 0.75
          position 0 0
          size 1 1
          hexactpos 1
@@ -180,7 +180,7 @@ FrameWidgetClass controls_tab_root {
          "no focus" 1
          Padding 0
          Margin 0
-         "Size To Content H" 1
+         "Size To Content H" 0
          "Size To Content V" 1
          Columns 1
          Rows 1
@@ -188,7 +188,7 @@ FrameWidgetClass controls_tab_root {
           ButtonWidgetClass mouse_invert_container {
            ignorepointer 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -202,30 +202,31 @@ FrameWidgetClass controls_tab_root {
              ignorepointer 1
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass mouse_invert_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
                vexactsize 0
                {
                 TextWidgetClass mouse_invert_setting_label {
-                 clipchildren 0
+                 clipchildren 1
                  ignorepointer 1
                  size 1 0.6
                  valign center_ref
@@ -245,7 +246,7 @@ FrameWidgetClass controls_tab_root {
               FrameWidgetClass mouse_invert_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -283,7 +284,7 @@ FrameWidgetClass controls_tab_root {
           }
           ButtonWidgetClass mouse_vsensitivity_container {
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -297,30 +298,31 @@ FrameWidgetClass controls_tab_root {
              ignorepointer 1
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass mouse_vsensitivity_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
                vexactsize 0
                {
                 TextWidgetClass mouse_vsensitivity_setting_label {
-                 clipchildren 0
+                 clipchildren 1
                  ignorepointer 1
                  size 1 0.6
                  valign center_ref
@@ -340,7 +342,7 @@ FrameWidgetClass controls_tab_root {
               FrameWidgetClass mouse_vsensitivity_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -365,7 +367,7 @@ FrameWidgetClass controls_tab_root {
           ButtonWidgetClass mouse_hsensitivity_container {
            ignorepointer 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -379,30 +381,31 @@ FrameWidgetClass controls_tab_root {
              ignorepointer 1
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass mouse_hsensitivity_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
                vexactsize 0
                {
                 TextWidgetClass mouse_hsensitivity_setting_label {
-                 clipchildren 0
+                 clipchildren 1
                  ignorepointer 1
                  size 1 0.55
                  valign center_ref
@@ -422,7 +425,7 @@ FrameWidgetClass controls_tab_root {
               FrameWidgetClass mouse_hsensitivity_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -460,7 +463,7 @@ FrameWidgetClass controls_tab_root {
           }
           ButtonWidgetClass mouse_aimmod_vsensitivity_button {
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -474,28 +477,29 @@ FrameWidgetClass controls_tab_root {
              ignorepointer 1
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
-             Padding 0
+             Padding 8
              Margin 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass mouse_aimmod_vsensitivity_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
                vexactsize 0
                {
                 TextWidgetClass mouse_aimmod_vsensitivity_setting_label {
-                 clipchildren 0
+                 clipchildren 1
                  ignorepointer 1
                  size 1 0.6
                  valign center_ref
@@ -542,7 +546,7 @@ FrameWidgetClass controls_tab_root {
           ButtonWidgetClass mouse_aimmod_hsensitivity_button {
            ignorepointer 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -556,28 +560,29 @@ FrameWidgetClass controls_tab_root {
              ignorepointer 1
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
-             Padding 0
+             Padding 8
              Margin 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass mouse_aimmod_hsensitivity_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
                vexactsize 0
                {
                 TextWidgetClass mouse_aimmod_hsensitivity_setting_label {
-                 clipchildren 0
+                 clipchildren 1
                  ignorepointer 1
                  size 1 0.6
                  valign center_ref

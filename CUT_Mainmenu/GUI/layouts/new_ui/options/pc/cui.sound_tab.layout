@@ -31,7 +31,7 @@ FrameWidgetClass sound_tab_root {
      "no focus" 1
      Padding 4
      Margin 0
-     "Size To Content H" 1
+     "Size To Content H" 0
      "Size To Content V" 1
      Columns 1
      Rows 2
@@ -44,11 +44,11 @@ FrameWidgetClass sound_tab_root {
        hexactpos 1
        vexactpos 1
        hexactsize 0
-       vexactsize 1
+       vexactsize 0
        "no focus" 1
        Padding 0
        Margin 0
-       "Size To Content H" 1
+       "Size To Content H" 0
        "Size To Content V" 1
        {
         PanelWidgetClass volume_settings_header {
@@ -56,7 +56,7 @@ FrameWidgetClass sound_tab_root {
          ignorepointer 1
          color 0 0 0 1
          position 0 0
-         size 1 30
+         size 1 34
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -84,7 +84,7 @@ FrameWidgetClass sound_tab_root {
         }
         GridSpacerWidgetClass volume_settings_content {
          ignorepointer 1
-         color 0 0 0 0.549
+         color 0 0 0 0.75
          position 0 0
          size 1 1
          hexactpos 1
@@ -94,7 +94,7 @@ FrameWidgetClass sound_tab_root {
          style DayZDefaultPanel
          Padding 0
          Margin 0
-         "Size To Content H" 1
+         "Size To Content H" 0
          "Size To Content V" 1
          Columns 1
          Rows 1
@@ -102,7 +102,7 @@ FrameWidgetClass sound_tab_root {
           FrameWidgetClass master_setting_container {
            ignorepointer 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -112,23 +112,24 @@ FrameWidgetClass sound_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass master_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -154,7 +155,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass master_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -179,7 +180,7 @@ FrameWidgetClass sound_tab_root {
           FrameWidgetClass effects_setting_container {
            ignorepointer 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -189,23 +190,24 @@ FrameWidgetClass sound_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass effects_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -231,7 +233,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass effects_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -256,7 +258,7 @@ FrameWidgetClass sound_tab_root {
           ButtonWidgetClass music_setting_container {
            visible 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -269,22 +271,23 @@ FrameWidgetClass sound_tab_root {
             GridSpacerWidgetClass music_setting {
              ignorepointer 1
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass music_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -310,7 +313,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass music_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -335,7 +338,7 @@ FrameWidgetClass sound_tab_root {
           ButtonWidgetClass ambient_music_mode_container {
            visible 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -348,22 +351,23 @@ FrameWidgetClass sound_tab_root {
             GridSpacerWidgetClass ambient_music_mode {
              ignorepointer 1
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass ambient_music_mode_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -389,7 +393,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass ambient_music_mode_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -423,11 +427,11 @@ FrameWidgetClass sound_tab_root {
        hexactpos 1
        vexactpos 1
        hexactsize 0
-       vexactsize 1
+       vexactsize 0
        "no focus" 1
        Padding 0
        Margin 0
-       "Size To Content H" 1
+       "Size To Content H" 0
        "Size To Content V" 1
        {
         PanelWidgetClass volume_settings_header0 {
@@ -435,7 +439,7 @@ FrameWidgetClass sound_tab_root {
          ignorepointer 1
          color 0 0 0 1
          position 0 0
-         size 1 30
+         size 1 34
          hexactpos 1
          vexactpos 1
          hexactsize 0
@@ -463,7 +467,7 @@ FrameWidgetClass sound_tab_root {
         }
         GridSpacerWidgetClass volume_settings_content0 {
          ignorepointer 1
-         color 0 0 0 0.549
+         color 0 0 0 0.75
          position 0 0
          size 1 1
          hexactpos 1
@@ -473,7 +477,7 @@ FrameWidgetClass sound_tab_root {
          style DayZDefaultPanel
          Padding 0
          Margin 0
-         "Size To Content H" 1
+         "Size To Content H" 0
          "Size To Content V" 1
          Columns 1
          Rows 1
@@ -483,7 +487,7 @@ FrameWidgetClass sound_tab_root {
            ignorepointer 1
            color 0 0 0 0
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -494,23 +498,24 @@ FrameWidgetClass sound_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass voip_master_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -536,7 +541,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass voip_master_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -561,7 +566,7 @@ FrameWidgetClass sound_tab_root {
           FrameWidgetClass voip_output_setting_container {
            ignorepointer 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -571,23 +576,24 @@ FrameWidgetClass sound_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass voip_output_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -613,7 +619,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass voip_output_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -639,7 +645,7 @@ FrameWidgetClass sound_tab_root {
            visible 0
            ignorepointer 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -649,23 +655,24 @@ FrameWidgetClass sound_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass voip_input_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -691,7 +698,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass voip_input_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -716,7 +723,7 @@ FrameWidgetClass sound_tab_root {
           ButtonWidgetClass voip_selection_setting_container {
            visible 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -729,22 +736,23 @@ FrameWidgetClass sound_tab_root {
             GridSpacerWidgetClass voip_selection_setting {
              ignorepointer 1
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass voip_selection_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -770,7 +778,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass voip_selection_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -795,7 +803,7 @@ FrameWidgetClass sound_tab_root {
           FrameWidgetClass voip_threshold_setting_container {
            ignorepointer 1
            position 0 0
-           size 1 30
+           size 1 34
            hexactpos 1
            vexactpos 1
            hexactsize 0
@@ -805,23 +813,24 @@ FrameWidgetClass sound_tab_root {
              ignorepointer 0
              color 0 0 0 0
              position 0 0
-             size 1 30
+             size 1 34
              hexactpos 1
              vexactpos 1
              hexactsize 0
              vexactsize 1
              style DayZDefaultPanel
              "no focus" 1
-             Padding 0
+             Padding 8
              Margin 0
-             "Size To Content H" 1
+             "Size To Content H" 0
              Columns 2
              Rows 1
              {
               FrameWidgetClass voip_threshold_setting_panel {
+               clipchildren 1
                ignorepointer 1
                position 0 0
-               size 0.5 0.6
+               size 0.58 1
                hexactpos 1
                vexactpos 1
                hexactsize 0
@@ -847,7 +856,7 @@ FrameWidgetClass sound_tab_root {
               FrameWidgetClass voip_threshold_setting_option {
                ignorepointer 1
                position 0 0
-               size 0.5 1
+               size 0.42 1
                hexactpos 1
                vexactpos 1
                hexactsize 0

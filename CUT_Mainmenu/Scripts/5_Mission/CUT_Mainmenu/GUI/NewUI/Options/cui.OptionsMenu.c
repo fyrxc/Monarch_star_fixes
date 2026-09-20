@@ -33,6 +33,7 @@ modded class OptionsMenu extends UIScriptedMenu
 		m_ControlsTab	= new OptionsMenuControls(layoutRoot.FindAnyWidget("Tab_3"), m_Details, m_Options, this);
 
 		CUT_CompactAllOptionTabs();
+		CUT_ScheduleOptionRelayout();
 		
 
 		m_Apply			= ButtonWidget.Cast(layoutRoot.FindAnyWidget("apply"));
@@ -82,12 +83,32 @@ modded class OptionsMenu extends UIScriptedMenu
 	{
 		super.OnShow();
 		CUT_CompactAllOptionTabs();
+		CUT_ScheduleOptionRelayout();
+	}
+
+	override void OnHide()
+	{
+		GetGame().GetCallQueue(CALL_CATEGORY_GUI).Remove(CUT_CompactAllOptionTabs);
+		super.OnHide();
+	}
+
+	protected void CUT_ScheduleOptionRelayout()
+	{
+		ScriptCallQueue queue = GetGame().GetCallQueue(CALL_CATEGORY_GUI);
+		if (!queue)
+			return;
+
+		queue.Remove(CUT_CompactAllOptionTabs);
+		// VPPAdminTools and similar mods inject extra option rows after Init.
+		queue.CallLater(CUT_CompactAllOptionTabs, 50, false);
+		queue.CallLater(CUT_CompactAllOptionTabs, 250, false);
 	}
 
 	// Vanilla option-group WrapSpacers are authored at 473px, which stretches
-	// 30px setting rows across the whole group. Collapse those shells so they
-	// hug their rows. Extra tabs (Hitmarker / Crashout / other mods) get the
-	// same treatment without renaming any widget IDs.
+	// setting rows across the whole group. Collapse those shells so they hug
+	// their rows, but keep a full 650px row width so labels do not paint over
+	// dropdowns and sliders. Extra tabs (Hitmarker / Crashout / other mods)
+	// get the same treatment without renaming any widget IDs.
 	protected void CUT_CompactAllOptionTabs()
 	{
 		if (!layoutRoot)
@@ -110,8 +131,22 @@ modded class OptionsMenu extends UIScriptedMenu
 		if (!w)
 			return;
 
+		CUT_FixOptionWidget(w);
+
+		Widget child = w.GetChildren();
+		while (child)
+		{
+			Widget next = child.GetSibling();
+			CUT_CompactOptionsTree(child);
+			child = next;
+		}
+	}
+
+	protected void CUT_FixOptionWidget(Widget w)
+	{
 		string name = w.GetName();
-		if (name.Contains("_settings_root"))
+
+		if (name.Contains("_settings_root") || name.Contains("_settings_content"))
 		{
 			float sx;
 			float sy;
@@ -121,15 +156,98 @@ modded class OptionsMenu extends UIScriptedMenu
 				w.SetSize(sx, 1);
 				w.Update();
 			}
+
+			CUT_ForceSettingsWidth(w);
 		}
 
-		Widget child = w.GetChildren();
-		while (child)
+		if (name.Contains("_setting_panel") || name.Contains("_mode_panel"))
 		{
-			Widget next = child.GetSibling();
-			CUT_CompactOptionsTree(child);
-			child = next;
+			w.SetFlags(WidgetFlags.CLIPCHILDREN);
+			w.ClearFlags(WidgetFlags.HEXACTSIZE);
+			w.ClearFlags(WidgetFlags.VEXACTSIZE);
+			w.SetSize(0.58, 1);
 		}
+		else if ((name.Contains("_setting_option") || name.Contains("_mode_option")) && (w.GetFlags() & WidgetFlags.HEXACTSIZE) != WidgetFlags.HEXACTSIZE)
+		{
+			w.ClearFlags(WidgetFlags.HEXACTSIZE);
+			w.ClearFlags(WidgetFlags.VEXACTSIZE);
+			w.SetSize(0.42, 1);
+		}
+
+		CUT_FixInjectedSettingPair(w);
+	}
+
+	protected void CUT_ForceSettingsWidth(Widget w)
+	{
+		float screenX;
+		float screenY;
+		w.GetScreenSize(screenX, screenY);
+		if (screenX <= 10 || screenX >= 620)
+			return;
+
+		float sx;
+		float sy;
+		w.GetSize(sx, sy);
+		w.SetFlags(WidgetFlags.HEXACTSIZE);
+		w.SetSize(650, sy);
+		w.Update();
+	}
+
+	// Two-column rows (vanilla or injected) whose children are a label panel
+	// plus an option frame: give the label 58% and clip overflow.
+	protected void CUT_FixInjectedSettingPair(Widget w)
+	{
+		Widget first = w.GetChildren();
+		if (!first)
+			return;
+
+		Widget second = first.GetSibling();
+		if (!second || second.GetSibling())
+			return;
+
+		string firstName = first.GetName();
+		string secondName = second.GetName();
+
+		Widget panel;
+		Widget option;
+		if (firstName.Contains("_panel") && secondName.Contains("_option"))
+		{
+			panel = first;
+			option = second;
+		}
+		else if (firstName.Contains("_option") && secondName.Contains("_panel"))
+		{
+			option = first;
+			panel = second;
+		}
+		else
+			return;
+
+		float sx;
+		float sy;
+		w.GetScreenSize(sx, sy);
+		if (sx > 10 && sx < 620 && sy > 16 && sy < 80)
+		{
+			w.SetFlags(WidgetFlags.HEXACTSIZE);
+			w.SetFlags(WidgetFlags.VEXACTSIZE);
+			w.SetSize(650, sy);
+			w.Update();
+		}
+
+		panel.SetFlags(WidgetFlags.CLIPCHILDREN);
+		panel.ClearFlags(WidgetFlags.HEXACTSIZE);
+		panel.ClearFlags(WidgetFlags.VEXACTSIZE);
+		panel.SetSize(0.58, 1);
+
+		if ((option.GetFlags() & WidgetFlags.HEXACTSIZE) != WidgetFlags.HEXACTSIZE)
+		{
+			option.ClearFlags(WidgetFlags.HEXACTSIZE);
+			option.ClearFlags(WidgetFlags.VEXACTSIZE);
+			option.SetSize(0.42, 1);
+		}
+
+		panel.Update();
+		option.Update();
 	}
 		
 	//Coloring functions (Until WidgetStyles are useful)
