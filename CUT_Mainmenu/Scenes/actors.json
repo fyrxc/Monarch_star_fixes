@@ -1,0 +1,11 @@
+{
+	"note": "Ignored when scene.json has npcs. Same fields as scene.json npcs[].",
+	"actors": [],
+	"_example": {
+		"type": "SurvivorM_Mirek",
+		"position": [7156.0, 6.1, 2672.0],
+		"orientation": [180.0, 0.0, 0.0],
+		"attachments": ["Hoodie_Black", "Jeans_Black", "AthleticShoes_Black"],
+		"emote": "SIT"
+	}
+}

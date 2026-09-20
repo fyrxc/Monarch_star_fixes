@@ -1,0 +1,73 @@
+{
+	"note": "dze can be a binarized DayZ Editor .dze. camera.position / orientation = the Apple marker (lens). player is Jose. Table guy is Cyril (INVENTORY rummage). Raiding guy is Seth (USING = tend campfire). Pack CUT_Mainmenu after edits.",
+	"enabled": true,
+	"world": "ChernarusPlus",
+	"dze": "CUT_Mainmenu/Scenes/cut_bg_done.dze",
+
+	"camera": {
+		"position": [11573.662, 59.331, 14729.805],
+		"orientation": [-120.0, 0.0, 0.0]
+	},
+
+	"player": {
+		"position": [11572.588, 58.010, 14731.175],
+		"orientation": [146.0, 0.0, 0.0],
+		"emote": "SUICIDE"
+	},
+
+	"npcs": [
+		{
+			"type": "SurvivorM_Cyril",
+			"position": [11574.167, 57.800, 14733.814],
+			"orientation": [180.0, 3.0, 0.0],
+			"attachments": [
+				"CUT_Shirt_IBU",
+				"CUT_Shorts_Leggings_IBU",
+				"CUT_Airforces_Yero_Set",
+				"CUT_Hexgrid_WET",
+				"MGE_Crown_Helmet"
+			],
+			"emote": "INVENTORY"
+		},
+		{
+			"type": "SurvivorM_Seth",
+			"position": [11569.948, 58.041, 14734.674],
+			"orientation": [-30.0, 0.0, 0.0],
+			"attachments": [
+				"CUT_TShirt_BloodBorn",
+				"CUT_Shorts_Leggings_BloodBorn",
+				"CUT_Converse_BloodBorn",
+				"CUT_Knight_Mask_BloodBorn",
+				"CUT_Hexgrid_BloodBorn"
+			],
+			"emote": "USING"
+		}
+	],
+
+	"date": [2011, 7, 15, 18, 30],
+	"overcast": 0.2,
+	"fog": 0.1,
+	"rain": 0,
+
+	"_emotes": [
+		"IDLE",
+		"SIT",
+		"SIT_CAMP",
+		"LEAN",
+		"LYING",
+		"WATCHING",
+		"SURRENDER",
+		"CAMPFIRE",
+		"USING",
+		"INVENTORY",
+		"SALUTE",
+		"FACEPALM",
+		"GREETING",
+		"DANCE",
+		"THROAT",
+		"TAUNT",
+		"CLAP",
+		"TIMEOUT",
+		"SUICIDE"
+	]
+}

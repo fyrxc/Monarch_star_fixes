@@ -1,0 +1,17 @@
+[
+    {
+      "m_ImagePath": "CUT_Mainmenu/GUI/textures/loading_screens/Loading1.paa",
+      "m_Headline": "Use your eyes",
+      "m_Description": "You wont hear the shot that kills you, always watch your angles."
+    },
+    {
+      "m_ImagePath": "CUT_Mainmenu/GUI/textures/loading_screens/Loading2.paa",
+      "m_Headline": "Dont get distracted",
+      "m_Description": "Hesitation in PvP often ends in the death screen. Be decisive."
+    },
+    {
+      "m_ImagePath": "CUT_Mainmenu/GUI/textures/loading_screens/Loading3.paa",
+      "m_Headline": "Looking for loot?",
+      "m_Description": "Military zones have top-tier loot and the highest body counts."
+    }
+  ]

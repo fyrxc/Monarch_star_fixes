@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{F3680D43FF90E5A2}CUT_Mainmenu/GUI/textures/loading_screens/Loading1.edds"
+ Author "unicron"
+ ChangeDate 20672554
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "loading1.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

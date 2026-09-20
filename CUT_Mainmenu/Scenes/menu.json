@@ -1,0 +1,116 @@
+{
+    "Objects": [
+        {
+            "name": "bldr_prop_BookBible",
+            "pos": [
+                11573.052734375,
+                59.58768844604492,
+                14730.0751953125
+            ],
+            "ypr": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999998211860657,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "SurvivorM_Elias",
+            "pos": [
+                11570.330078125,
+                58.09514617919922,
+                14734.6494140625
+            ],
+            "ypr": [
+                -58.94236373901367,
+                0.0,
+                0.0
+            ],
+            "scale": 0.9999997019767761,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Roadblock_Table",
+            "pos": [
+                11567.1923828125,
+                58.48208236694336,
+                14732.611328125
+            ],
+            "ypr": [
+                146.72366333007813,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Roadblock_Table",
+            "pos": [
+                11569.806640625,
+                58.32293701171875,
+                14730.734375
+            ],
+            "ypr": [
+                105.06847381591797,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Roadblock_Table",
+            "pos": [
+                11572.86328125,
+                58.474464416503909,
+                14736.3212890625
+            ],
+            "ypr": [
+                146.72366333007813,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "SurvivorM_Mirek",
+            "pos": [
+                11571.759765625,
+                57.94548416137695,
+                14732.0546875
+            ],
+            "ypr": [
+                146.6306915283203,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999997615814209,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Roadblock_Table",
+            "pos": [
+                11573.70703125,
+                58.32293701171875,
+                14733.302734375
+            ],
+            "ypr": [
+                179.8405303955078,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999996423721314,
+            "enableCEPersistency": 0,
+            "customString": ""
+        }
+    ]
+}

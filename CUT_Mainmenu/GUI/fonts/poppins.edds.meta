@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{8C807351F95C4C91}CUT_Mainmenu/GUI/fonts/poppins.edds"
+ Author "chase"
+ ChangeDate 773616390
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "poppins.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

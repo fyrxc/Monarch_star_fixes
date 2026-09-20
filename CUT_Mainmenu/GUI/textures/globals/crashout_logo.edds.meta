@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{A95492F3E9C572DB}CUT_Mainmenu/GUI/textures/globals/crashout_logo.edds"
+ Author "chase"
+ ChangeDate 0
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "crashout_logo.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

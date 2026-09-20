@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{456D81012D0E53F1}CUT_Mainmenu/GUI/textures/globals/DeathScreen.edds"
+ Author "chase"
+ ChangeDate -1859882327
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "DeathScreen.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

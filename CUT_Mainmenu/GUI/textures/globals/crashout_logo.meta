@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{A95492F3E9C572DB}CUT_Mainmenu/GUI/textures/globals/crashout_logo.edds"
+ Author "unicron"
+ ChangeDate -1196576581
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "crashout_logo.png"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}
